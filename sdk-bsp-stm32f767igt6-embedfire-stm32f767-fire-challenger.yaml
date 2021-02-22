@@ -1,0 +1,104 @@
+board:
+  buy_url_cn: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22879221102.12.2273174fIrPIxA&id=596023589474
+  buy_url_global: https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-22879221102.12.2273174fIrPIxA&id=596023589474
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Challenger STM32F767 is a development board based on ARM Cortex-M7
+    kernel launched by Wildfire. The highest frequency is 216MHz. The development
+    board has rich onboard resources, which can give full play to the chip performance
+    of STM32F767.
+  description_zh: 挑战者 STM32F767 是野火推出的一款基于 ARM Cortex-M7 内核的开发板，最高主频为 216Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32F767 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32F767-FIRE-CHALLENGER
+  price_cn: 518 CNY
+  price_global: 80.23 USD
+  sale_contact_cn: https://embedfire.com/
+  sale_contact_global: https://embedfire.com/
+  small_image: documents/images/board_small.png
+  vendor: EmbedFire
+  version: 1.0.0
+chip:
+  chip_name: STM32F767IGT6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F7
+  source_freq: '8000000'
+  sub_series_name: STM32F767
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/野火_F767挑战者_核心板_原理图_V2.1.pdf
+  title: 野火_F767挑战者_核心板_原理图_V2
+example_projects: []
+features:
+- 'MCU: STM32F767, 216MHz, 1MB Flash, 512KB RAM, 16K CACHE'
+- 'External RAM: Model, 8MB'
+- 'External Flash: Model, 16MB'
+features_zh:
+- MCU：STM32f767，主频 216MHz，1MB FLASH ，512KB RAM ，16K CACHE
+- 外部 RAM：型号，8MB
+- 外部 FLASH：型号，16MB
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - build
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: 'stm32f767-fire-challenger '
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
